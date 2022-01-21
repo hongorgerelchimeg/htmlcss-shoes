@@ -3,6 +3,11 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 /* Typography */
 
 body, html {
@@ -70,7 +75,7 @@ h3 {
 }
 
 .button-holder {
-    position: absolute;
+    position: fixed;
     top: 2%;
     right: 1%;
 
