@@ -72,6 +72,7 @@ h3 {
     top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-transform: capitalize;
     font-size: 1.5rem;
     text-align: center;
 }
@@ -98,8 +99,24 @@ li {
     background-color: white;
     border-radius: 20px;
     text-align: center;
-   
+    box-shadow: 1px 5px 25px -1px #000000;
+}
 
+/* Button animations */
+
+li:hover, 
+li:focus {
+  animation: pulse 1s;
+  box-shadow: 0 0 0 2em rgba(#000,0);
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 var(--hover); }
+}
+
+li:active {
+
+    background-color: grey;
 }
 
 /* Anchor Link */
@@ -112,10 +129,6 @@ a {
     width: 30px;
 }
 
-.img-size {
-  
-}
-
 /* Backround Colors */
 
 .green {
@@ -126,7 +139,7 @@ a {
     background-color: #F2E205;
 }
 
-/* Text Color */
+/* Text Colors */
 
 .text-green {
     color: #078C03;
